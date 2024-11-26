@@ -1,61 +1,61 @@
-/* estilo geral */
-*{
+/* ESTILO GERAL */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     height: 100vh;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-/* estilo do cabeçalho */
+/* ESTILO CABEÇALHO */
 
-header{
+header {
     padding: 40px 4%;
 }
 
-header >.interface{
-    display:flex;
-align-items: center;
-justify-content: space-between;
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header a{
-color: #5c5c5c;
-text-decoration: none;
-display: inline-block;
-transition: .2s;
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
 }
 
-header a:hover{
+header a:hover {
     color: white;
     transform: scale(1.05);
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
 
-header nav ul li{
-    display:inline-block;
+header nav ul li {
+    display: inline-block;
     padding: 0 40px;
 }
 
 
 
-.contatos button{
+.contatos button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -63,169 +63,221 @@ header nav ul li{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    transition: 2s ;
-    }
-
-    h2.titulo{
-        color: #fff;
-        font-size: 38px ;
-        text-align: center;
-    }
-
-    h2.titulo span{
-        color: blueviolet;
-    }
-/* estilo do topo */
-.topo{
-padding: 40px 4%;
+    transition: 2s;
 }
 
-section.topo .flex{
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: blueviolet;
+}
+
+/* ESTILO TOPO*/
+
+.topo {
+    padding: 40px 4%;
+}
+
+section.topo .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo .meutopo h1{
+.topo .meutopo h1 {
     color: #fff;
     font-size: 48px;
-line-height: 40px;
+    line-height: 40px;
 }
-.topo .meutopo h1 span{
+
+.topo .meutopo h1 span {
     color: blueviolet;
 }
 
-button:hover{
+button:hover {
     box-shadow: opx opx 8px rgba(137, 43, 226, 0.641);
     transform: scale(1.05);
 }
-.topo .meutopo p{
+
+.topo .meutopo p {
     color: #fff;
     margin: 40px 0;
     font-size: 25px;
 }
 
-.topo .img-topo img{
+.topo .img-topo img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 
 }
 
 .img-topo img {
-    filter : drop-shadow(0 0 1rem blueviolet);
+    filter: drop-shadow(0 0 1rem blueviolet);
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
-/* estilo especialidades */
-section.especialidades{
+/*ESTILO ESPECIALIDADES */
+
+section.especialidades {
     padding: 40px 4%;
 }
 
-section.especialidades .flex{
+section.especialidades .flex {
     gap: 60px;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box {
     color: #fff;
     padding: 40px;
     border-radius: 20px;
-margin-top: 45px;
-transition: .2s;
+    margin-top: 45px;
+    transition: .2s;
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
-    box-shadow:0 0 20px #ffffff63;
+    box-shadow: 0 0 20px #ffffff63;
 }
 
-.especialidades .especialidades-box i{
+.especialidades .especialidades-box i {
     font-size: 70px;
     color: blueviolet;
 }
 
-.especialidades .especialidades-box h3{
+.especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
 
 /* estilo sobre */
 
-section.sobre{
+section.sobre {
     padding: 80px 4%;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .txt-sobre{
-    color:#fff;
+.sobre .txt-sobre {
+    color: #fff;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     display: block;
-    color:blueviolet ;
+    color: blueviolet;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
 }
 
- .btn-social button{
-     width: 60px;
-     height: 60px;
-     border-radius: 30px ;
-     border: none;
-     background-color: blueviolet;
-     font-size: 22px ;
-     cursor: pointer;
-     margin: 0 5px;
-     transition: .2;
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: blueviolet;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2;
 }
 
-img{
+img {
     border-radius: 25px;
 }
-/* estilo footer */
-footer{
+
+/* ESTILO MENSAGEM */
+
+.section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff; 
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+}
+
+input, textarea {
+    margin: 20px 0;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: blueviolet; 
+    color: white; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: rgb(150, 53, 241); 
+}
+
+/* ESTILO FOOTER */
+
+footer {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
-footer .flex{
-    justify-content:end;
+footer .flex {
+    justify-content: end;
 }
 
-footer .line-footer{
+footer .line-footer {
     padding: 20px 0;
 }
 
 
-footer .line-footer p i{
-color: blueviolet;
-font-size: 22px;
+footer .line-footer p i {
+    color: blueviolet;
+    font-size: 22px;
 }
 
-.border{
+.border {
     border-bottom: 2px solid blueviolet;
 }
 
-footer .line-footer p a{
+footer .line-footer p a {
     color: #fff;
 }
